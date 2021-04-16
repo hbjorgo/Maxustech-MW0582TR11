@@ -18,13 +18,13 @@ Serial output on startup:
 |->> LIGHT:  0  DELAY:  2
 
 Send AT commands to configure it:
-AT+DELAY=0001 (0001 - 3599) (Vout ON time in seconds)
-AT+PA=0001 (0001 - 0007) (Output power)
-AT+DEBUG=0000 (off: 0000, on: 0002) (Debug mode)
-AT+THRES:
-AT+FREQ:
-AT+REVGAIN:
-AT+LIGHT:
+- AT+DELAY=0001 (0001 - 3599) (Vout ON time in seconds)
+- AT+PA=0001 (0001 - 0007) (Output power)
+- AT+DEBUG=0000 (off: 0000, on: 0002) (Debug mode)
+- AT+THRES:
+- AT+FREQ:
+- AT+REVGAIN:
+- AT+LIGHT:
 The module responds with OK if the command was successful
 
 Cycle power to get a print of the new settings
