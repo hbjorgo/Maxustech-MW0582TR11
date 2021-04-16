@@ -25,12 +25,12 @@ AT+THRES:
 AT+FREQ:
 AT+REVGAIN:
 AT+LIGHT:
-The mofule responds with OK if the command was successful
+The module responds with OK if the command was successful
 
 Cycle power to get a print of the new settings
 
 NOTE: Putting it in debug mode will output alot of raw data and may cause the terminal to hang.
 
-Please let me know if you know what the LED is for, and how you control it. I tried AT+LED=0001 and AT+LED=0000 and it changed the light setting in the startup output, but nothing else...
+Please let me know if you know what the LED is for, and how you control it. I tried AT+LIGHT=0001 and AT+LIGHT=0000 and it changed the light setting in the startup output, but nothing else...
 
 Also check out [MaxusDev](https://github.com/MaxusDev/MWTool)
