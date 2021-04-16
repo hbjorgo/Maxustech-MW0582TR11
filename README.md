@@ -10,10 +10,10 @@ It's a radar capable of detecting motion up to ~10m. The datasheet doesn't conta
 - Tx
 
 
-- Vin: 5V power
-- Gnd: ground
-- Vout: a signal that is normally low (0V), but high (5V) for some time when movement is detected
-- Rx and Tx are for serial communication (5V) (512000 baud)
+- Vin: 5V - 18V power
+- Gnd: 0V
+- Vout: a signal that is normally low (0V), but pulses high to Vin for DELAY (see below) seconds when movement is detected
+- Rx and Tx are for serial communication (512000 baud). Use it to configure the module
 
 ## Configuration
 
@@ -27,7 +27,14 @@ Serial output on startup:
 Send AT commands to configure it:
 AT+DELAY=0001 (0001 - 3599) (Vout ON time in seconds)
 AT+PA=0001 (0001 - 0007) (Output power)
-AT+DEBUG=0000 (off: 0000, on 0002) (Debug mode)
+AT+DEBUG=0000 (off: 0000, on: 0002) (Debug mode)
+AT+THRES:
+AT+FREQ:
+AT+REVGAIN:
+AT+LIGHT:
+The mofule responds with OK if the command was successful
+
+Cycle power to get a print of the new settings
 
 NOTE: Putting it in debug mode will output alot of raw data and may cause the terminal to hang.
 
