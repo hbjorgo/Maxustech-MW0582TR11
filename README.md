@@ -32,3 +32,5 @@ AT+DEBUG=0000 (off: 0000, on 0002) (Debug mode)
 NOTE: Putting it in debug mode will output alot of raw data and may cause the terminal to hang.
 
 Please let me know if you know what the LED is for, and how you control it. I tried AT+LED=0001 and AT+LED=0000 and it changed the light setting in the startup output, but nothing else...
+
+Also check out [MaxusDev](https://github.com/MaxusDev/MWTool)
