@@ -3,11 +3,12 @@
 MW0582TR11 is a doppler radar module from Maxustech.
 It's a radar capable of detecting motion up to ~10m. The datasheet doesn't contain much information, and I haven't found much online, so here is my findings.
 ## Pinout
-- Vin (5V)
+- Vin
 - Gnd
 - Vout
 - Rx
 - Tx
+
 
 - Vin: 5V power
 - Gnd: ground
