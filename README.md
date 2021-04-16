@@ -25,9 +25,10 @@ Serial output on startup:
 |->> LIGHT:  0  DELAY:  2
 
 Send AT commands to configure it:
-AT+PA=0001 (0001 - 0007)
-AT+DEBUG=0000 (off: 0000, on 0002)
+AT+DELAY=0001 (0001 - 3599) (Vout ON time in seconds)
+AT+PA=0001 (0001 - 0007) (Output power)
+AT+DEBUG=0000 (off: 0000, on 0002) (Debug mode)
 
 NOTE: Putting it in debug mode will output alot of raw data and may cause the terminal to hang.
 
-Please let me know if you know what the LED is for, and how you control it. I tried AT+LED=0001 and AT+LED=0000 and it changed the LED setting in the startup output, but nothing else...
+Please let me know if you know what the LED is for, and how you control it. I tried AT+LED=0001 and AT+LED=0000 and it changed the light setting in the startup output, but nothing else...
