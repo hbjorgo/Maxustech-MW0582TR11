@@ -25,6 +25,7 @@ Send AT commands to configure it:
 - AT+FREQ:
 - AT+REVGAIN:
 - AT+LIGHT:
+
 The module responds with OK if the command was successful
 
 Cycle power to get a print of the new settings
